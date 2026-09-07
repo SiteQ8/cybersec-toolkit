@@ -1,52 +1,59 @@
 # CyberSec Toolkit
 
-A guided open-source cybersecurity workspace for learning, CTF practice, GRC work, and defensive security research.
+A curated reference for open-source cybersecurity tools across offensive security, defensive operations, GRC, research, forensics, and AppSec.
 
-## What is included
+Each tool entry includes:
 
-- **Command center** with quick starts, saved tools, and learning progress
-- **Explore toolkit** with 20 curated tools across recon, web security, blue team, GRC, research, forensics, and AppSec
-- **Learning tracks** with locally persisted progress
-- **My workspace** for bookmarked tools and field notes
-- **Tool briefs** with purpose, use cases, safe-start guidance, source repositories, and installation links
-- **Authorization-first guidance** throughout the experience
+- Purpose and practical use cases
+- Category, maturity, and implementation language
+- Source repository
+- Installation and documentation link
+- Safe-start guidance for scoped practice
 
-This release is a client-side prototype. Saved tools, field notes, quick-start completion, and learning progress are stored in the browser with `localStorage`; there is no account system or remote data service.
+## Tools
 
-## Run locally
+### Reconnaissance
 
-Requires Node.js and pnpm.
+- Nmap
+- Amass
+- BloodHound Community Edition
 
-From this project directory:
+### Web security
 
-```bash
-pnpm install
-pnpm run dev
-```
+- Burp Suite Community
+- OWASP ZAP
+- ffuf
 
-Useful checks:
+### Blue team and incident response
 
-```bash
-pnpm run typecheck
-pnpm run build
-```
+- Wireshark
+- Wazuh
+- Velociraptor
+- Sigma
+- TheHive
 
-The Vite server defaults to port `5173`. Set `PORT` to use another port and `BASE_PATH` when serving the app below a URL prefix:
+### GRC and threat intelligence
 
-```bash
-PORT=5173 BASE_PATH=/ pnpm run dev
-```
+- OpenVAS / Greenbone
+- MISP
+- MITRE ATT&CK
 
-If you are running the full Replit monorepo, install from the workspace root and use:
+### Application security
 
-```bash
-pnpm --filter @workspace/cybersec-toolkit run dev
-```
+- Trivy
+- Semgrep
 
-## Safety
+### Research and analysis
 
-Only test systems you own or have explicit authorization to assess. Use intentionally vulnerable labs, CTF targets, or other scoped environments when practicing.
+- Ghidra
+- Hashcat
+- John the Ripper
+- CyberChef
+
+## Scope
+
+This repository is a tool index and reference collection. Tool links point to their respective upstream projects and documentation.
 
 ## License
 
-MIT. See [LICENSE](./LICENSE).
+MIT — see [LICENSE](./LICENSE).
