@@ -56,4 +56,4 @@ This repository is a tool index and reference collection. Tool links point to th
 
 ## License
 
-MIT — see [LICENSE](./LICENSE).
+MIT, see [LICENSE](./LICENSE).
